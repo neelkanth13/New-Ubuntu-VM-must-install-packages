@@ -9,3 +9,24 @@ sudo systemctl start ssh
 #####################################################################################################
 sudo apt-get install fuse libfuse2
 
+3. Install vim, gparted
+#####################################################################################################
+sudo apt-get install gparted
+sudo apt-get install vim
+
+4. Install Driver for rtl8812au Wi-Fi Chipset based 11ac USB dongle
+#####################################################################################################
+sudo apt update
+sudo apt install dkms git
+sudo apt install build-essential libelf-dev linux-headers-$(uname -r)
+git clone https://github.com/aircrack-ng/rtl8812au.git
+cd rtl8812au/
+sudo make dkms_install
+dkms status  
+sudo reboot
+
+5. Install net-tools to enable ifconfig command
+######################################################################################################
+sudo apt install net-tools
+sudo apt-get update
+sudo apt install net-tools
