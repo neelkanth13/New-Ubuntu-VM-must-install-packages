@@ -1,0 +1,6 @@
+1. Install SSH server for other machines in the network to be able to reach your new Ubuntu Machine
+####################################################################################################
+sudo apt-get install openssh-server
+sudo systemctl enable ssh
+sudo systemctl enable ssh --now
+sudo systemctl start ssh
