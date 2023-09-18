@@ -4,3 +4,8 @@ sudo apt-get install openssh-server
 sudo systemctl enable ssh
 sudo systemctl enable ssh --now
 sudo systemctl start ssh
+
+2. Pre-requisite package before installing any App Image:
+#####################################################################################################
+sudo apt-get install fuse libfuse2
+
